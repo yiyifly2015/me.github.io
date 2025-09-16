@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Yiyi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
-  email            :
+  email            : "yiyifly2015@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -325,3 +325,14 @@ defaults:
       comments: # true
       share: true
       related: true
+# Enable navigation
+navigation:
+  main:main
+
+collections:
+  posts:
+    output: false
+  videos:
+    output: false
+  photos:
+    output: true

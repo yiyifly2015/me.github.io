@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1>Posts in {{ page.category | capitalize }}</h1>
+
+<ul>
+{% assign items = site.posts | where: "categories", page.category | sort: "date" | reverse %}
+{% for post in items %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+  </li>
+{% endfor %}
+</ul>
+
